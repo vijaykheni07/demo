@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.example.mylibrary.ToasterMessage;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ToasterMessage.s(getApplicationContext(),"Hello");
+        ToasterMessage.s(this,"Hello");
 
     }
 }
